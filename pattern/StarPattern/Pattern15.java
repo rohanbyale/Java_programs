@@ -1,7 +1,8 @@
-/**
- * Hollow Diamond Pattern
- */
-public class Pattern {
+package StarPattern;
+
+public class Pattern15 {
+
+
 /*
 
                 *  *  *  *  * 
@@ -40,3 +41,4 @@ public class Pattern {
 
     }
 }
+
