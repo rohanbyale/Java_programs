@@ -1,13 +1,20 @@
+package SingleLevel;
 
 import java.util.Scanner;
 
 public class ProductSystem {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+
         Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the name,price, quanity and discount");
+        System.out.println("Enter Product Name: ");
         String name = sc.next();
+        System.out.println("Enter the Price of Prodcut: ");
         double price = sc.nextDouble();
+        System.out.println("Enter the Quantity: ");
         int quantity = sc.nextInt();
+        System.out.println("Enter the Discount: ");
         double discount = sc.nextDouble();
 
         Discount obj = new Discount(name, price, quantity, discount);
@@ -35,7 +42,7 @@ class Product {
         System.out.println("Product name: " + name);
         System.out.println("Price " + price);
         System.out.println("quantity " + quantity);
-        System.out.println("Discount " + calculateTotal());
+        System.out.println("final price after Discount " + calculateTotal());
     }
 
     public double calculateTotal() {
