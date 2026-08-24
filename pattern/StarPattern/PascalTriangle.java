@@ -19,7 +19,7 @@ public class PascalTriangle {
         for(int i = 1; i<=6; i++){
 
             for(int a = 1; a<=space; a++){
-                System.out.print(" ");
+                System.out.print("  ");
             }
 
             int x = 1; 
@@ -27,7 +27,7 @@ public class PascalTriangle {
             int den = 1;
 
             for(int b = 1;b<=starspace; b++){
-                System.out.print(x+" ");
+                System.out.print(x+"  ");
                 x= (x*num)/den;
                 num--;
                 den++;
