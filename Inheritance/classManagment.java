@@ -6,6 +6,7 @@ public class classManagment {
         Scanner sc = new Scanner(System.in);
 
         // Student inputs
+        System.out.println("Student Details-- 1) Name 2) ID 3) Department 4) Marks -----------");
         String studentname = sc.next();
         int studentid = sc.nextInt();
         sc.nextLine();
@@ -13,6 +14,7 @@ public class classManagment {
         int marks = sc.nextInt();
 
         // Teacher inputs
+        System.out.println("Teacher Details-- 1) Name 2) ID 3) Department 4) Salary -----------");
         String teachername = sc.next();
         int teacherid = sc.nextInt();
         sc.nextLine();
@@ -20,6 +22,7 @@ public class classManagment {
         double salary = sc.nextDouble();
 
         // Admin inputs
+        System.out.println("Admin Details-- 1) Name 2) ID 3) Department 4) Role -----------");
         String adminname = sc.next();
         int adminid = sc.nextInt();
         sc.nextLine();
@@ -27,6 +30,7 @@ public class classManagment {
         String role = sc.nextLine();
 
         // Librarian inputs
+        System.out.println("Librarian Details-- 1) Name 2) ID 3) Department 4) BooksHandled -----------");
         String librarianname = sc.next();
         int librarianid = sc.nextInt();
         sc.nextLine();
