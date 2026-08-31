@@ -38,21 +38,18 @@
 
 // // }
 
-
-
 // import java.util.Scanner;
 
 // public class Main {
 //     public static void main(String[] args) {
-      
+
 //       Scanner sc = new Scanner(System.in);
 //      Engine eng = new Engine("Petrol", 1.5);
 //      Car c = new Car("Honda","Black",150, eng);
-    
+
 //      c.displayDetails();
 //     }
 // }
-
 
 // class Car{
 //   String Name;
@@ -76,13 +73,11 @@
 
 //   }
 
-
 // }
 
 // class  Engine{
 //   String fuelTeype;
 //   double cc;
-  
 
 //   public Engine(String fuelTeype, double cc){
 //     this.fuelTeype = fuelTeype;
@@ -101,7 +96,7 @@
 
 // public class Main {
 //     public static void main(String[] args) {
-      
+
 //       Scanner sc = new Scanner(System.in);
 //      Pen p = new Pen("Tramax","Black","Ball Pen",12);
 //      Student s = new Student("Rohan", 19,"Computer Science",p);
@@ -154,3 +149,88 @@
 //     System.out.println("Price : "+price);
 //   }
 // }
+
+/**
+ * Main
+ */
+
+// // agreegation
+// public class Main {
+
+// public static void main(String[] args) {
+
+// Customer c1 = new Customer("Rohan", "Savin", 12000);
+// Customer c2 = new Customer("Vyas ", "Current", 199999);
+// Customer c3 = new Customer("Mangesh ", "Fixed", 10000);
+
+// Bank b = new Bank("Sbi Bank", "Ammerpet", c1, c2, c3);
+// b.displayDetails();
+
+// }
+// }
+
+// class Bank {
+// String name;
+// String place;
+// Customer c1;
+// Customer c2;
+// Customer c3;
+
+// public Bank(String name, String place, Customer c1, Customer c2, Customer c3)
+// {
+// this.name = name;
+// this.place = place;
+// this.c1 = c1;
+// this.c2 = c2;
+// this.c3 = c3;
+
+// }
+
+// public void displayDetails() {
+// System.out.println("Name of the Bank" + name);
+// System.out.println("Location of the Bank" + place);
+// System.out.println("-------------------------------------------------");
+// c1.displayDetails();
+// System.out.println("---------------------------------------------------");
+// c2.displayDetails();
+// System.out.println("--------------------------------------------------");
+// c3.displayDetails();
+// }
+// }
+
+// class Customer {
+// String name;
+// String accType;
+// double balance;
+
+// public Customer(String name, String accType, double balance) {
+// this.name = name;
+// this.accType = accType;
+// this.balance = balance;
+// }
+
+// public void displayDetails() {
+// System.out.println("Name of the Customer : " + name);
+// System.out.println("Account Type : " + accType);
+// System.out.println("Account Balance : " + balance);
+// }
+// }
+
+/// program
+// template method
+
+class Main {
+  public static void main(String[] args) {
+
+  }
+
+}
+
+abstract class Drink {
+
+  final void makeDrink() {
+    
+
+  }
+
+}
