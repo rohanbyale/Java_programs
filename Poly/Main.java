@@ -217,20 +217,138 @@
 // }
 
 /// program
-// template method
+// template method provides a proper method for method calls
+// template method should be final
+// why? so that subclasses wont override.
+//
+
+// class Main {
+// public static void main(String[] args) {
+// Drink d1 = new Tea();
+// d1.makeDrink();
+// Drink d2 = new Coffe();
+// d2.makeDrink();
+
+// }
+// }
+
+// abstract class Drink {
+
+// final void makeDrink() // it is a template method
+// {
+
+// // first method
+
+// boilWater();
+// addMainItem();
+// pourIntoCup();
+// addExtra();
+
+// }
+
+// public abstract void boilWater();
+
+// public abstract void addMainItem();
+
+// public abstract void pourIntoCup();
+
+// public abstract void addExtra();
+
+// }
+
+// class Tea extends Drink {
+// public void boilWater() {
+// System.out.println("Start boiling the water");
+
+// }
+
+// public void addMainItem() {
+// System.out.println("Add tea powder");
+// }
+
+// public void pourIntoCup() {
+// System.out.println("Drink is pored into the cup");
+// }
+
+// public void addExtra() {
+// System.out.println("Add suger");
+// }
+
+// }
+
+// class Coffe extends Drink {
+// public void boilWater() {
+// System.out.println("Start boiling the water");
+
+// }
+
+// public void addMainItem() {
+// System.out.println("Add coffe (nescafe) powder");
+// }
+
+// public void pourIntoCup() {
+// System.out.println("Drink is pored into the cup");
+// }
+
+// public void addExtra() {
+// System.out.println("Add suger and anythign you want ");
+// }
+// }
+import java.util.Scanner;
 
 class Main {
   public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    Atm ob1 = new Withdraw();
+    ob1.Process();
+
+  }
+}
+
+abstract class Atm {
+
+  // template method
+
+  final public void Process() {
+    insertCard();
+    enterPin();
+    doTransacton();
+    printReceipt();
+  }
+
+  public void insertCard() {
+    System.out.println("Card is inserted");
+  }
+
+  public void enterPin() {
+    System.out.println("Pin entered successfulluy");
+  }
+
+  public abstract void doTransacton();
+
+  public void printReceipt() {
+    System.out.println("Receipt is printed");
+  }
+
+}
+
+class Withdraw extends Atm {
+
+  public void doTransacton() {
+    System.out.println("Amount is withdrawn Succesfully");
 
   }
 
 }
 
-abstract class Drink {
-
-  final void makeDrink() {
-    
-
+class Deposit extends Atm {
+  public void doTransacton() {
+    System.out.println("Amoutn is deopsited successfully");
   }
+}
 
+class checkBalance extends Atm {
+  public void doTransacton() {
+    System.out.println("Checked the available balance successfully");
+  }
 }
