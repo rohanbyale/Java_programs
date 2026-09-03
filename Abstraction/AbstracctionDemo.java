@@ -79,7 +79,6 @@
 //     }
 // }
 
-
 /**
  * AbstractionDemo
  */
@@ -105,19 +104,19 @@ class LoanService {
     }
 }
 
-class PaymentFactory{
-    static Payment getPaymentobject(int choice){
-        switch(choice){
-            case 1 ->{
+class PaymentFactory {
+    static Payment getPaymentobject(int choice) {
+        switch (choice) {
+            case 1 -> {
                 return new UPIpayment();
             }
-            case 2 ->{
-                return new CreditCard() ;
+            case 2 -> {
+                return new CreditCard();
             }
-            case 3 ->{
+            case 3 -> {
                 return new CryptoPayment();
             }
-            default ->{
+            default -> {
                 return null;
             }
         }
