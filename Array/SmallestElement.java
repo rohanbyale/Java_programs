@@ -15,14 +15,14 @@ public class SmallestElement {
         }
 
         int smallest = a[0];
-        for(int num : a){
-            if(a[0]>num){
+        for (int num : a) {
+            if (a[0] > num) {
                 smallest = num;
             }
 
         }
 
-        System.out.println(smallest+" is the smallesh Number");
+        System.out.println(smallest + " is the smallesh Number");
 
     }
 }
