@@ -1,7 +1,6 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Reverse {
+public class CheckProgram {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -16,16 +15,18 @@ public class Reverse {
             a[i] = sc.nextInt();
 
         }
+        System.out.println("Enter the number");
+        int n = sc.nextInt();
 
-        int x = 0;
-        int y = a.length - 1;
-        while (x < y) {
-            int temp = a[x];
-            a[x] = a[y];
-            a[y] = temp;
+        for (int num : a) {
+            if (num == n) {
+                System.out.println("number is found");
+            } else {
+                System.out.println("Not found");
+                break;
+            }
+
         }
-
-        System.out.println(Arrays.toString(a));
     }
 
 }
