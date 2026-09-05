@@ -45,3 +45,4 @@ class Result extends StudentDetail {
     }
 
 }
+

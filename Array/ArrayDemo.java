@@ -21,6 +21,10 @@
 
 // }
 
+
+/*
+1) Array is Linear Data Structure
+*/
 import java.util.Arrays;
 
 /**
