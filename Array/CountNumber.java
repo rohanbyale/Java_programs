@@ -16,7 +16,7 @@ public class CountNumber {
             a[i] = sc.nextInt();
 
         }
-        System.out.println("Enter a number to found appeared");
+        System.out.println("Enter a number to found how many times appeared");
         int number = sc.nextInt();
         int count = 0;
         for (int num : a) {
@@ -25,6 +25,6 @@ public class CountNumber {
             }
         }
 
-        System.out.println("Number appeared : " + count);
+        System.out.println("Number appeared : " + count + "Times");
     }
 }

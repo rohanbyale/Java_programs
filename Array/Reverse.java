@@ -23,6 +23,8 @@ public class Reverse {
             int temp = a[x];
             a[x] = a[y];
             a[y] = temp;
+            x++;
+            y--;
         }
 
         System.out.println(Arrays.toString(a));

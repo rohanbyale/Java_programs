@@ -17,13 +17,13 @@ public class ReverseArray {
 
         }
 
-       // int[] b = new int[size];
+        int[] b = new int[size];
 
         for (int i = 0; i < a.length; i++) {
-            a[i] = a[(a.length - 1) - i];
+            b[i] = a[(a.length - 1) - i];
         }
 
-        System.out.println(Arrays.toString(a));
+        System.out.println(Arrays.toString(b));
     }
 
 }

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CheckProgram {
+public class CheckNumberProgram {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -18,14 +18,19 @@ public class CheckProgram {
         System.out.println("Enter the number");
         int n = sc.nextInt();
 
-        for (int num : a) {
-            if (num == n) {
-                System.out.println("number is found");
-            } else {
-                System.out.println("Not found");
+        
+        boolean found = false;
+        for(int e : a){
+            if(e ==  n){
+                found = true;
                 break;
             }
+        }
 
+        if(found == true){
+            System.out.println("Array contains the given target Element");
+        } else{
+            System.out.println("Given Elment is not found");
         }
     }
 
