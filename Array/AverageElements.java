@@ -15,6 +15,7 @@ public class AverageElements {
         System.out.println("Enter array Elements one by one");
         for (int i = 0; i < a.length; i++) {
             a[i] = sc.nextInt();
+            
         }
 
         int sum = 0;
