@@ -20,7 +20,7 @@ public class FirstReapetingNumber {
 
         for (int i = 0; i <= a.length - 1; i++) {
 
-            for (int j = 0; j <= a.length - 1; j++) {
+            for (int j = 0; j < i; j++) {
                 if (a[i] == a[j]) {
                     System.out.println("First Reapting Number is : " + a[i]);
                     found = true;
@@ -34,7 +34,7 @@ public class FirstReapetingNumber {
             }
         }
         if (!found) {
-            System.out.println("Element is not reapeatign : ");
+            System.out.println("Element is not reapeating ");
         }
 
     }
