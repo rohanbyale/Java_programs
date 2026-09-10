@@ -22,7 +22,7 @@ public class FirstReapetingNumber {
 
             for (int j = 0; j < i; j++) {
                 if (a[i] == a[j]) {
-                    System.out.println("First Reapting Number is : " + a[i]);
+                    System.out.println("First Repeating Number is : " + a[i]);
                     found = true;
                     break;
                 }
