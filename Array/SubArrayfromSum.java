@@ -14,21 +14,19 @@ public class SubArrayfromSum {
             a[i] = sc.nextInt();
 
         }
+
+        System.out.println("Enter Target Sum : ");
         int target = sc.nextInt();
         boolean result = false;
         int minIndex = 0;
         int maxIndex = 0;
 
-        int maxsum = Integer.MIN_VALUE;
-
         outer: for (int i = 0; i <= a.length - 1; i++) {
-
-            for (int j = i; j <= a.length - 1; j++) {
+            inner: for (int j = i; j <= a.length - 1; j++) {
                 int sum = 0;
-                System.out.print(i + " , " + j + " =");
 
                 for (int m = i; m <= j; m++) {
-                    sum = sum + a[i];
+                    sum = sum + a[m];
 
                 }
                 if (sum == target) {
@@ -46,7 +44,7 @@ public class SubArrayfromSum {
                 System.out.println(a[x] + "  ");
             }
         } else {
-            System.out.println("There is no subarray matching to the targer");
+            System.out.println("There is no subarray matching to the target");
         }
     }
 

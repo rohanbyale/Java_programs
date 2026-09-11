@@ -19,25 +19,24 @@ public class SumOfSubArray {
         }
         int maxsum = Integer.MIN_VALUE;
         System.out.println("Subarray are");
-   
 
         for (int i = 0; i <= a.length - 1; i++) {
-            int sum = 0;
-            for (int j = i; j <= a.length - 1; j++) {
 
-                 System.out.print(i + " , "+ j + " =");
+            for (int j = i; j <= a.length - 1; j++) {
+                int sum = 0;
+
+                System.out.print(i + " , " + j + " =");
 
                 for (int m = i; m <= j; m++) {
                     // System.out.print(a[m]+" ");
                     sum = sum + a[m];
 
                 }
-                System.out.println(" sum = "+sum);
+                System.out.println(" sum = " + sum);
                 if (sum > maxsum) {
                     maxsum = sum;
                 }
 
-                 System.out.println();
             }
         }
         System.out.println("Maximum SubArray sum is : " + maxsum);
