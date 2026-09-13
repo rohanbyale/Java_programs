@@ -1,9 +1,8 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class FirstReapetingNumber {
-
+public class MajorityElement {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size");
         int size = sc.nextInt();
@@ -14,31 +13,32 @@ public class FirstReapetingNumber {
         for (int i = 0; i <= a.length - 1; i++) {
 
             a[i] = sc.nextInt();
+
         }
 
-        boolean found = false;
+        boolean isMajority = false;
 
         for (int i = 0; i <= a.length - 1; i++) {
 
-            for (int j = 0; j < i; j++) {
-                if (a[i] == a[j]) {
-                    System.out.println("First Repeating Number is : " + a[i]);
-                    found = true;
-                    break;
-                    
+            int count = 0;
+
+            for (int j = 0; j <= a.length - 1; j++) {
+
+                if (a[j] == a[i]) {
+                    count++;
                 }
 
             }
 
-            if (found) {
+            if (count > (a.length / 2)) {
+                System.out.println("Majority Element is " + a[i]);
+                isMajority = true;
                 break;
             }
         }
-        if (!found) {
-            System.out.println("Element is not reapeating ");
+        if (isMajority == false) {
+            System.out.println("no majority element is present");
         }
 
-  
     }
-
 }

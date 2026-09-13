@@ -18,16 +18,24 @@ public class FrequencyOfArray {
 
         for (int i = 0; i <= a.length - 1; i++) {
 
-            int count = 0;
-            for (int j = 0; j < i; j++) {
-                if (a[i] == a[j]) {
-                    count++;
+            boolean isPreviouslyPresent = false;
 
+            for (int j = 0; j <= i - 1; j++) {
+                if (a[j] == a[i]) {
+                    isPreviouslyPresent = true;
+                    break;
                 }
-
             }
-            System.out.println(a[i] + "appeared " + count + "times");
 
+            if (isPreviouslyPresent == false) {
+                int count = 0;
+                for (int j = 0; j <= a.length - 1; j++) {
+                    if (a[j] == a[i]) {
+                        count++;
+                    }
+                }
+                System.out.println(a[i] + " is repeated " + count + " time(s)");
+            }
         }
     }
 

@@ -31,7 +31,11 @@ public class Diff {
                 min = num;
 
         }
-        System.out.println("Difference is " + (max - min));
-        // System.out.println(min);
+        // System.out.println("Difference is " + (max - min));
+        // // System.out.println(min);
+
+   
+
+        System.out.println("The Diffrence between smallest element and larget element is "+(max - min));
     }
 }

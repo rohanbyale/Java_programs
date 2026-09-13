@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ElementEvenindex {
+public class MissingElement1to9 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -11,17 +11,21 @@ public class ElementEvenindex {
         int a[] = new int[size];
 
         System.out.println("Enter the array elements one by one");
-        
+
         for (int i = 0; i < a.length; i++) {
             a[i] = sc.nextInt();
         }
-
-        System.out.println("Array Element at Even Index");
-
-        for (int i = 0; i <= a.length - 1; i += 2) {
-            System.out.print(a[i] + " ");
-
+        int n = a[a.length - 1];
+        int totalsum = n * (n + 1) / 2;
+        int arraysum = 0;
+        for (int num : a) {
+            arraysum += num;
         }
-
+        if (totalsum == arraysum) {
+            System.out.println("no missing element");
+        } else {
+            System.out.println("missing element is " + (totalsum - arraysum));
+        }
     }
+
 }

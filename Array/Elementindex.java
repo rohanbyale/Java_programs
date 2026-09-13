@@ -23,5 +23,6 @@ public class Elementindex {
                 System.out.println("Index of Given element is " + i);
             }
         }
+
     }
 }

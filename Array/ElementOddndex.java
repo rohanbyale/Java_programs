@@ -14,10 +14,9 @@ public class ElementOddndex {
         for (int i = 0; i < a.length; i++) {
             a[i] = sc.nextInt();
         }
-        System.out.println("Array Element at Even Index");
-        for (int i = 1; i <= a.length - 1; i += 1) {
+        System.out.println("Array Element at Odd Index");
+        for (int i = 1; i <= a.length - 1; i += 2) {
             System.out.print(a[i] + " ");
-
         }
 
     }
