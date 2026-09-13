@@ -13,13 +13,21 @@ public class HighestElement {
             a[i] = sc.nextInt();
         }
 
-        int largest = a[0];
+        // int largest = a[0];
+        // for (int num : a) {
+        // if (num > a[0]) {
+        // largest = num;
+        // }
+        // }
+        // System.out.println(largest);
+
+        int largest = 0;
         for (int num : a) {
-            if (num > a[0]) {
+            if (num > largest)
                 largest = num;
-            }
         }
-        System.out.println(largest);
+
+        System.out.println("Largest Element is Given Array is  :" + largest);
     }
 
 }

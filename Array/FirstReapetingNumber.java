@@ -25,6 +25,7 @@ public class FirstReapetingNumber {
                     System.out.println("First Repeating Number is : " + a[i]);
                     found = true;
                     break;
+                    
                 }
 
             }
@@ -36,6 +37,25 @@ public class FirstReapetingNumber {
         if (!found) {
             System.out.println("Element is not reapeating ");
         }
+
+    // for(int i = 0; i<=a.length-1; i++){
+
+    //     for(int j = 0; j < i ; j++){
+            
+    //         if(a[i] == a[j]){
+    //             found = true;
+    //             break;
+    //         }
+    //     }
+
+    //     if(found){
+    //         System.out.println("First Reatpeated Element is "+a[i]);
+    //     }
+    // }
+
+    // if(!found){
+    //     System.out.println("No Element is Reapeting");
+    // }
 
     }
 

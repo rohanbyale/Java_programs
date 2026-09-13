@@ -25,6 +25,6 @@ public class CountNumber {
             }
         }
 
-        System.out.println("Number appeared : " + count + "Times");
+        System.out.println("Number appeared : " + count + " Times");
     }
 }

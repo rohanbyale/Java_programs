@@ -2,32 +2,34 @@ import java.util.Scanner;
 
 public class CheckArrayisSort {
     public static void main(String[] args) {
-                Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size");
         int size = sc.nextInt();
 
         int[] a = new int[size];
         System.out.println("Enter array element one by one");
 
-        for (int i = 0; i <= a.length - 2; i++) {
+        for (int i = 0; i <= a.length - 1; i++) {
 
             a[i] = sc.nextInt();
 
         }
         boolean asc = true;
-        for(int i  = 0; i<=a.length-2; i++){
-            if(a[i+1]<a[i]){
+        for (int i = 0; i <= a.length - 2; i++) {
+            if (a[i + 1] < a[i]) {
                 asc = false;
-            break;
+                break;
             }
-          
+
         }
-        if(asc){
+        if (asc) {
             System.out.println("Array is sorted");
-        } else{
+        } else {
             System.out.println("array is not sorted");
         }
-        
+
+
+
     }
-   
+
 }

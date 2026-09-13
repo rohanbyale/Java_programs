@@ -9,15 +9,19 @@ public class CopyArrayElement {
 
         int a[] = new int[size];
 
+        int[] b = new int[a.length];
+        
         System.out.println("Enter Array Elment one by one");
         for (int i = 0; i <= a.length - 1; i++) {
             a[i] = sc.nextInt();
-        }
-
-        int[] b = new int[a.length];
-        for (int i = 0; i <= a.length - 1; i++) {
             b[i] = a[i];
         }
+
+
+        // int[] b = new int[a.length];
+        // for (int i = 0; i <= a.length - 1; i++) {
+        // b[i] = a[i];
+        // }
 
         System.out.println("B array : = " + Arrays.toString(b));
 

@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class FrequencyofElement {
+public class FrequencyOfArray {
     public static void main(String[] args) {
-        
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size");
         int size = sc.nextInt();
@@ -16,17 +16,19 @@ public class FrequencyofElement {
 
         }
 
-        for(int i = 0 ; i<=a.length-1; i++){
+        for (int i = 0; i <= a.length - 1; i++) {
 
             int count = 0;
-            for(int j = 0; j < i ; j++){
-                if(a[i] == a[j]){
+            for (int j = 0; j < i; j++) {
+                if (a[i] == a[j]) {
                     count++;
-                    System.out.println(a[i]+" ,"+ a[j]+" , "+count);
+
                 }
+
             }
-            
+            System.out.println(a[i] + "appeared " + count + "times");
+
         }
     }
-    
+
 }

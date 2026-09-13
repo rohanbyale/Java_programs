@@ -1,3 +1,4 @@
+package Sorting_Array;
 
 /**
  * BubbleSort
@@ -19,31 +20,15 @@ public class BubbleSort {
 
         }
 
-        // for (int cycle = 1; cycle <= a.length - 1; cycle++) {
-        //     for (int i = 0; i <= a.length - 2; i++) {
-        //         if (a[i + 1] < a[i]) {
-        //             int temp = a[i];
-        //             a[i] = a[i + 1];
-        //             a[i + 1] = temp;
-        //         }
-        //     }
-        // }
-        // System.out.println(Arrays.toString(a));
-
-
-        for(int cycle = 1; cycle<=a.length-1; cycle++){
-
-            for(int i = 0; i<=a.length-2; i++){
-
-                if(a[i+1]<a[i]){
+        for (int cycle = 1; cycle <= a.length - 1; cycle++) {
+            for (int i = 0; i <= a.length - 2; i++) {
+                if (a[i + 1] < a[i]) {
                     int temp = a[i];
-                    a[i] = a[i+1];
-                    a[i+1] = temp;
+                    a[i] = a[i + 1];
+                    a[i + 1] = temp;
                 }
             }
-
         }
-
         System.out.println(Arrays.toString(a));
 
     }

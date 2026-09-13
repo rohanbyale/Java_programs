@@ -13,17 +13,17 @@ public class CountEvenOdd {
             a[i] = sc.nextInt();
         }
 
-      int evencount = 0;
-      int oddcount = 0;
+        int evencount = 0;
+        int oddcount = 0;
         for (int num : a) {
             if (num % 2 == 0) {
                 evencount++;
-            } else{
+            } else {
                 oddcount++;
             }
         }
-        System.out.println("Even Count"+evencount);
-        System.out.println("Odd Count "+oddcount);
+        System.out.println("Even Count" + evencount);
+        System.out.println("Odd Count " + oddcount);
     }
 
 }
