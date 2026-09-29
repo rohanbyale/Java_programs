@@ -11,18 +11,16 @@ public class FindDuplicatechar {
         Scanner sc = new Scanner(System.in);
         String a = sc.nextLine();
 
+        String result = "";
+        for (int i = 0; i <= a.length() - 1; i++) {
+            char ch = a.charAt(i);
 
-     String result = "";
-     for(int i = 0; i<=a.length()-1; i++){
-        char ch = a.charAt(i);
-
-        if(!result.contains(""+ch)){
-            result += ch;
-        } else{
-            System.out.println(ch+" ");
+            if (!result.contains("" + ch)) {
+                result += ch;
+            } else {
+                System.out.println(ch + " ");
+            }
         }
-     }
 
-        
     }
 }

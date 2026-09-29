@@ -8,19 +8,30 @@ public class CountOcuurenceofChar {
         System.out.println("Enter a String : ");
         String s = sc.nextLine();
         System.out.println("Enter a Character : ");
+        // char ch = sc.next().charAt(0);
+
+        // int count = 0;
+
+        // for (int i = 0; i <= s.length() - 1; i++) {
+        // if (s.charAt(i) == ch) {
+        // System.out.println("Present at index : "+i);
+        // count++;
+
+        // }
+        // }
+
+        // System.out.println("Count : " + count);
+
         char ch = sc.next().charAt(0);
-
-        int count = 0;
-
-        for (int i = 0; i <= s.length() - 1; i++) {
-            if (s.charAt(i) == ch) {
-                System.out.println("Present at index : "+i);
+int count = 0;
+        for(int i = 0; i<=s.length()-1; i++){
+            if(s.charAt(i) == ch){
+                System.out.println("The string contain given character ");
+                System.out.println("Character present at index"+i);
                 count++;
-
             }
         }
-
-        System.out.println("Count : " + count);
+        System.out.println(count);
 
     }
 }

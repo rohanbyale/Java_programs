@@ -6,7 +6,6 @@ public class AnagramString {
     public static void main(String[] args) {
         String s1 = "RACE";
         String s2 = "CARE";
-       
 
         char a[] = s1.toCharArray();
         char b[] = s2.toCharArray();
