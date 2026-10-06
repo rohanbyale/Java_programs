@@ -5,7 +5,6 @@ import java.util.*;
 public class HashCodeMethod {
 
     public static void main(String[] args) {
-        // Write your code here
         Scanner sc = new Scanner(System.in);
 
         String seat1 = sc.nextLine();

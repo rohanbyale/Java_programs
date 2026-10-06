@@ -1,8 +1,13 @@
+package objectclass;
+
+/**
+ * EqualMethod
+ */
 import java.util.*;
 
-public class EqualMethod {
+class EqualMethod {
     public static void main(String[] args) {
-        // Write your code here
+     
         Scanner sc = new Scanner(System.in);
         int studentid = sc.nextInt();
         sc.nextLine();

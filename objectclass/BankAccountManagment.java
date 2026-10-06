@@ -1,8 +1,13 @@
+// package objectclass;
+
+/**
+ * BankAccountManagment
+ */
 import java.util.*;
 
 public class BankAccountManagment {
     public static void main(String[] args) {
-        // Write your code here
+      
         Scanner sc = new Scanner(System.in);
 
         String number = sc.nextLine();

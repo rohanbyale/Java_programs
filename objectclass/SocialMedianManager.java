@@ -1,6 +1,11 @@
-import java.util.*;
+package objectclass;
 
-public class ToStringMethod {
+/**
+ * Main
+ */
+import java.util.Scanner;
+
+public class SocialMedianManager {
     public static void main(String[] args) {
         // Write your code here
 
@@ -12,6 +17,11 @@ public class ToStringMethod {
         int likes = sc.nextInt();
         int comments = sc.nextInt();
         int share = sc.nextInt();
+
+        if (likes < 0) {
+            System.out.println("Error: Engagement values must be non-negative");
+            return;
+        }
         EngagementPost ob = new EngagementPost(username, country, postid, contentType, likes, comments, share);
         System.out.println(ob);
 
@@ -28,7 +38,7 @@ class UserProfile {
     }
 
     public String toString() {
-        return "User[username=" + username + ", country=" + country + "],";
+        return "User[username=" + username + ", country=" + country + "]," + "\n";
     }
 }
 
@@ -43,7 +53,7 @@ class Post extends UserProfile {
     }
 
     public String toString() {
-        return super.toString() + "Post[id=" + postid + ", type=" + contentType + "], ";
+        return super.toString() + "Post[id=" + postid + ", type=" + contentType + "], " + "\n";
 
     }
 
@@ -63,7 +73,7 @@ class EngagementPost extends Post {
     }
 
     public String toString() {
-        return super.toString() + "Engagement[likes=" + likes + ", comments" + comments + ", shares=" + share + "]";
+        return super.toString() + "Engagement[likes=" + likes + ", comments=" + comments + ", shares=" + share + "]";
     }
 
 }
