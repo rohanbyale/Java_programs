@@ -16,7 +16,7 @@ public class ValidMarksCheck {
         Student ob = new Student(name, marks);
 
         try {
-            ob.checkMarks(marks);
+            System.out.println(ob.checkMarks(marks));
 
         } catch (InvalidMarksException e) {
             System.out.println(e.getMessage());
@@ -43,7 +43,7 @@ class Student {
 
     }
 
-    public void checkMarks(int marks[]) throws InvalidMarksException {
+    public double checkMarks(int marks[]) throws InvalidMarksException {
         int sum = 0;
         for (int i = 0; i <= marks.length - 1; i++) {
             if (marks[i] < 0) {
@@ -56,8 +56,9 @@ class Student {
         }
 
         System.out.println("All marks are Valid");
-        int avg = sum / 5;
-        System.out.println("Avg of marks: " + avg);
+        double avg = sum / 5;
+        return avg;
+
     }
 
 }
