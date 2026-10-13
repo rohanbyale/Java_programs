@@ -1,4 +1,5 @@
 import java.util.*;
+
 /**
  * Both thread are waiting for each other DeadLock
  * JoinMethod
@@ -44,38 +45,36 @@ class Myrunable implements Runnable {
 
 }
 
+// public class JoinMethod {
+// public static void main(String[] args) {
 
-public class YeildMethod {
-    public static void main(String[] args) {
+// MyThread t = new MyThread(Thread.currentThread());
+// t.start();
 
-        MyThread t = new MyThread(Thread.currentThread());
-        t.start();
+// for (int i = 1; i <= 100; i++) {
+// System.out.println(i);
+// }
+// System.out.println("Main Thread Got Executed");
 
-        for(int i = 1; i<=100; i++){
-     System.out.println(i);
-        }
-        System.out.println("Main Thread Got Executed");
+// }
 
-    }
-
-}
+// }
 
 // class MyThread extends Thread {
-//   Thread mt;
-//   public MyThread(Thread mt){
-//     this.mt = mt;
-//   }
-//     public void run() {
-    
+// Thread mt;
+// public MyThread(Thread mt){
+// this.mt = mt;
+// }
+// public void run() {
 
-//       System.out.println("T1 thread wait for main thread");
-//       try{
+// System.out.println("T1 thread wait for main thread");
+// try{
 // mt.join();
-//         for (int i = 101; i <= 200; i++) {
-//            System.out.println(i);
-//         }
-//       }catch(InterruptedException e){
-//         System.out.println(e.getMessage());
-//       }
-//     }
+// for (int i = 101; i <= 200; i++) {
+// System.out.println(i);
+// }
+// }catch(InterruptedException e){
+// System.out.println(e.getMessage());
+// }
+// }
 // }
