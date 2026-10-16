@@ -12,8 +12,8 @@ public class WaitDeadlock {
             ob.wait();
         }
 
-        for(int i = 0; i<=10; i++){
-          System.out.println(i);
+        for (int i = 0; i <= 10; i++) {
+            System.out.println(i);
         }
     }
 }
@@ -24,7 +24,6 @@ class Mythread01 extends Thread {
             for (int i = 0; i <= 10; i++) {
                 System.out.println(Thread.currentThread().getName() + " " + i);
             }
-
             notify();
         }
     }
