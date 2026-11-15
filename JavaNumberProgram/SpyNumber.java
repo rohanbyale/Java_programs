@@ -6,16 +6,16 @@ public class SpyNumber {
         int n = sc.nextInt();
         int sum = 0;
         int product = 1;
-        while(n!=0){
-            int ld = n%10;
-            sum = sum+ld;
-            product = ld*product;
-            n= n/10;
+        while (n != 0) {
+            int ld = n % 10;
+            sum = sum + ld;
+            product = ld * product;
+            n = n / 10;
 
         }
-        if(sum==product){
+        if (sum == product) {
             System.out.println("The given Number is spy number");
-        }else{
+        } else {
             System.out.println("The given Number is not a spy number");
         }
     }
