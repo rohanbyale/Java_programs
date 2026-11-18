@@ -30,7 +30,7 @@ class Customer1 extends Thread {
     public void run() {
         b.Deposit(500);
     }
-}
+}    
 
 class Customer2 extends Thread {
     public Bank b;

@@ -7,25 +7,37 @@ public class EmployeeMang {
 		Scanner sc = new Scanner(System.in);
 		EmployeeMangament ob = new EmployeeMangament();
 		int choice = 0;
-		System.out.println("1 Register 2 Search Employee 3 All Employee 4 Display Employee 6 Exist ");
-		
+		System.out.println("1 Register 2 Search Employee 3 All Employee 4 Display Employee 5 Exist ");
+
 		do {
+			System.out.println("Enter Choice ");
 			choice = sc.nextInt();
-			swtich(choice){
-				case 1 ->{
-					int id = sc.nextInt();
-					sc.nextLine();
-					String name = sc.nextLine();
-					double salary = sc.nextDouble();
-					String dept = sc.nextLine();
-					
-					map.put(new Employee(id, name, salary, dept));
-					
-					
-				}
-				
+			switch (choice) {
+			case 1 -> {
+				int empid = sc.nextInt();
+				sc.nextLine();
+				String empname = sc.nextLine();
+				double salary = sc.nextDouble();
+				String deptString = sc.next();
+				ob.addEmployee(new Employee(empid, empname, salary, deptString));
 			}
-		}while(choice != 6) ;
+
+			case 2 -> {
+				System.out.println("Enter Employee ID for Search ");
+				int id = sc.nextInt();
+				System.out.println(ob.EmployeeFound(id));
+			}
+
+			case 3 -> {
+				ob.DisplayDetails();
+			}
+
+			case 4 -> {
+				System.out.println("Employee Size : " + ob.getTotalEmlployees());
+			}
+			}
+
+		} while (choice == 5);
 
 	}
 

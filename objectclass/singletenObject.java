@@ -1,6 +1,7 @@
 import java.util.*;
 
-public class Main {
+public class singletenObject
+ {
     public static void main(String[] args) {
     
       Student s1 = Student.GivemeanObject(10,20);
